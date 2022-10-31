@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+main(){
+    int n,count=0;
+    scanf("%d",&n);
+    for (int i = 1;1; ++i)
+    {
+        if (n>=(i*i+i)/2)
+        {
+            count+=1;
+            n-=(i*i+i)/2;
+        }
+        else break;
+    }  
+    printf("%d",count);  
+}
+
+
+
+
+    
+
