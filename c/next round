@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+    int a,place,all[100],count=0;
+    scanf("%d %d",&a,&place);
+    for(int i=0;i<a;i++){
+        scanf("%d",&all[i]);
+
+    }
+    for (int i = 0; i < a; ++i)
+    {
+        if (all[place-1]<=all[i] && all[i]>0)
+        {
+            count+=1;
+        }
+        
+    }
+    printf("%d",count);
+}
