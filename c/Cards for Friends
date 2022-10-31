@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+
+main(){
+
+    long long  t;
+    scanf("%lld",&t);
+    while(t--){
+        long long  w,h,n,ans=1;
+        scanf("%lld%lld%lld",&w,&h,&n);
+        if(n == 1){
+        printf("YES\n");
+        continue;
+        }
+        while(w % 2 == 0){
+            ans *= 2;
+            w = w / 2;
+        }
+        while(h % 2 == 0){
+            ans *= 2;
+            h = h / 2;
+        }
+        if( n <= ans){
+            printf("YES\n");
+        }
+        else{
+            printf("NO\n");
+        }
+
+    }
+
+
+
+
+    
+
+}
