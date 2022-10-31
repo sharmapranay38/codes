@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    for(int i=0;i<a;i++){
+        char word[101];
+        scanf("%s",&word);
+        int l = strlen(word);
+
+        if (l>10)
+        {
+            printf("%c%d%c\n",word[0],l-2,word[l-1]);
+        }
+
+        else{
+            printf("%s\n",word);
+        }
+
+    }
+}
