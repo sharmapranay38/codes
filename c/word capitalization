@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include<ctype.h>
+main(){
+    char s[2000];
+    gets(s);
+
+    s[0]=toupper(s[0]);
+    printf("%s",s);
+}
+
+
+
+    
+
