@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int k,n,w,money=0;
+    scanf("%d",&k);
+    scanf("%d",&n);
+    scanf("%d",&w);
+    for (int i = 1; i < w+1; ++i)
+    {
+        money+=k*i;
+
+    }
+    if (n>money)
+    {
+        printf("%d",0);
+    }
+
+    else{
+        printf("%d",money-n);
+    }
+
+}
