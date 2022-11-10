@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#include<string.h>
+main(){
+    char str1[500],str2[500];
+    gets(str1);
+    gets(str2);
+    char s22[500];
+    int len = strlen(str1);
+    int temp;
+    for (int i = 0; i < len/2; i++)  
+    {  
+        // temp variable use to temporary hold the string  
+        temp = str1[i];  
+        str1[i] = str1[len - i - 1];  
+        str1[len - i - 1] = temp;  
+    }  
+
+    int flag = strcmp(str1,str2);
+
+    if (flag==0)
+    {
+        printf("YES");
+    }
+    else printf("NO");
+
+}
+
