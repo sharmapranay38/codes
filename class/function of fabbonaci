@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+int fab(int);
+int main(int argc, char const *argv[])
+{
+   int n;
+   scanf("%d",&n);
+   for (int i = 1; i < n+1; ++i)
+   {
+      printf("%d ",fab(i));
+   }
+}
+int fab(int n){
+   int start=0,next=1,c=0;
+   while((n-1)>0){
+      start=next;
+      next=c;
+      c = start+next;
+      n--;
+   }
+   return c;
+}
