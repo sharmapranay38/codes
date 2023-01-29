@@ -1,0 +1,4 @@
+    memset(s,0,sizeof(s));
+    
+    creates a array "s" with all elements 0
+    useful toh hai
