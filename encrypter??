@@ -1,0 +1,30 @@
+simpleton = "`1234567890-=!@#$%^&*()_+qwertyuiop[]\QWERTYUIOP{ }|asdfghjkl;'ASDFGHJKL:zxcvbnm,./ZXCVBNM<>?"
+
+key = 16
+user = input("enter sentence")
+
+def encrypt(user):
+    ans = ""
+    for word in user:
+        index = simpleton.find(word)
+        if index+key<len(simpleton):
+            ans+=simpleton[index+key]
+        else:
+            ans+=simpleton[len(simpleton)-index-key]
+    return ans
+
+def decrypt(user):
+    ans = ""
+    for word in user:
+        index = simpleton.find(word)
+        if index-key<0:
+            ans+=simpleton[len(simpleton)+index+key]
+        else:
+            ans+=simpleton[index-key]
+    return ans
+
+
+
+
+
+print(decrypt(user))
