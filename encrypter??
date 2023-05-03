@@ -24,7 +24,8 @@ def decrypt(user):
     return ans
 
 
-
-
-
-print(decrypt(user))
+choice = int(input("1. for encrypt msg\n2. for decrypt msg"))
+if choice==1:
+    print(encrypt(user))
+else:
+    print(decrypt(user))
